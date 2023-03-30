@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBookBookmark } from "@fortawesome/free-solid-svg-icons";
 
 const Blog = ({ blog }) => {
   const { id, cover, image, name, title, date, time } = blog;
@@ -21,7 +23,13 @@ const Blog = ({ blog }) => {
             </div>
           </div>
           <div>
-            <p>{time} min read</p>
+            <p>
+              {time} min read{" "}
+              <FontAwesomeIcon
+                className=" cursor-pointer"
+                icon={faBookBookmark}
+              />
+            </p>
           </div>
         </div>
         <h2 className="card-title font-bold">{title}</h2>
