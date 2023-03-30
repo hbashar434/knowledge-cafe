@@ -5,7 +5,7 @@ const Blog = ({ blog }) => {
   console.log(id);
 
   return (
-    <div className="card mt-8 w-full bg-base-100">
+    <div className="card w-full bg-base-100">
       <figure className=" rounded-2xl">
         <img src={cover} alt="banner-image" className=" w-full h-96" />
       </figure>
