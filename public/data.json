@@ -1,7 +1,7 @@
 [
   {
     "id": "6425c41fce70c4ac52cd321b",
-    "picture": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=800",
+    "cover": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=800",
     "image": "https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?w=740&t=st=1680196474~exp=1680197074~hmac=e9a4873a58571419321141a6bad850dc002aff2bb68703666e5a88679b270eb7",
     "time": 10,
     "name": "Shanna Sheppard",
@@ -10,7 +10,7 @@
   },
   {
     "id": "6425c4aa48da56d020a70320",
-    "picture": "https://images.unsplash.com/photo-1605792657660-596af9009e82?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmxvY2tjaGFpbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=600",
+    "cover": "https://images.unsplash.com/photo-1605792657660-596af9009e82?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmxvY2tjaGFpbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=600",
     "image": "https://img.freepik.com/free-photo/close-up-young-successful-man-smiling-camera-standing-casual-outfit-against-blue-background_1258-66609.jpg?w=740&t=st=1680196465~exp=1680197065~hmac=fdd70b0b1a4c10a3ec6c5cb2da03298c425f3affa459f985e752ad8726e85a9b7",
     "time": 18,
     "name": "Sanchez Marsh",
@@ -20,7 +20,7 @@
 
   {
     "id": "6425c6000774a0f2a1e64ce8",
-    "picture": "https://images.unsplash.com/photo-1568952433726-3896e3881c65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHRlY2hub2xvZ3l8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=600",
+    "cover": "https://images.unsplash.com/photo-1568952433726-3896e3881c65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHRlY2hub2xvZ3l8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=600",
     "image": "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=740&t=st=1680196454~exp=1680197054~hmac=b27c391fcde0d48d396ae9d395ca5b93685df688ff44d25008f35385f1cdfa6e7",
     "time": 12,
     "name": "Chase Reyes",
@@ -29,7 +29,7 @@
   },
   {
     "id": "6425c75834d0e0b86e6d20d4",
-    "picture": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fHRlY2hub2xvZ3l8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=600",
+    "cover": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fHRlY2hub2xvZ3l8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=600",
     "image": "https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?w=740&t=st=1680196453~exp=1680197053~hmac=24cf724fadbd8ccfec1b61fbe100fe5d7924cd7c05937327541dba66d9d1edb27",
     "time": 13,
     "name": "Doyle Levy",
