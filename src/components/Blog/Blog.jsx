@@ -26,7 +26,6 @@ const Blog = (props) => {
             <p>
               {time} min read{" "}
               <FontAwesomeIcon
-                onClick={() => handleReadingTime(time)}
                 className=" cursor-pointer"
                 icon={faBookBookmark}
               />
@@ -36,7 +35,9 @@ const Blog = (props) => {
         <h2 className="card-title font-bold">{title}</h2>
         <p>#beginners #programming</p>
         <div className="card-actions">
-          <button className=" btn-link">Mark as read</button>
+          <button className=" btn-link" onClick={() => handleReadingTime(time)}>
+            Mark as read
+          </button>
         </div>
       </div>
       <hr />
