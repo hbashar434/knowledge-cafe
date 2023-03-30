@@ -2,9 +2,9 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookBookmark } from "@fortawesome/free-solid-svg-icons";
 
-const Blog = ({ blog }) => {
-  const { id, cover, image, name, title, date, time } = blog;
-  console.log(id);
+const Blog = (props) => {
+  const { id, cover, image, name, title, date, time } = props.blog;
+  const handleReadingTime = props.handleReadingTime;
 
   return (
     <div className="card w-full bg-base-100">
@@ -26,6 +26,7 @@ const Blog = ({ blog }) => {
             <p>
               {time} min read{" "}
               <FontAwesomeIcon
+                onClick={() => handleReadingTime(time)}
                 className=" cursor-pointer"
                 icon={faBookBookmark}
               />
