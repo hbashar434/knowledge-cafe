@@ -5,6 +5,7 @@ import Bookmark from "./components/Bookmark/Bookmark";
 import Header from "./components/Header/Header";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Answer from "./components/Answer/Answer";
 
 const App = () => {
   const [blogs, setBlog] = useState([]);
@@ -22,22 +23,26 @@ const App = () => {
     setReadingTime(spentTime);
   };
   const addToBookmark = (bookmark) => {
-    const bookmarkExist = bookmarks.find((markId) => markId.id === bookmark.id);
+    const bookmarkExist = bookmarks.find(
+      (existedBookmark) => existedBookmark.id === bookmark.id
+    );
     if (!bookmarkExist) {
       const newBookmark = [...bookmarks, bookmark];
       setBookmarks(newBookmark);
     } else {
-      toast("You Have Already Bookmarked This Blog” . You can’t use browser alert. If the blog title gets added in the list after toast alert we will accept it. That is, You can bookmark a blog multiple times. No worries!");
+      toast(
+        "You Have Already Bookmarked This Blog” . You can’t use browser alert. If the blog title gets added in the list after toast alert we will accept it. That is, You can bookmark a blog multiple times. No worries!"
+      );
       const newBookmark = [...bookmarks, bookmark];
       setBookmarks(newBookmark);
     }
   };
 
   return (
-    <div className=" my-8 p-4 mx-auto container">
+    <div className="my-8 p-4 md:mx-28">
       <Header></Header>
       <hr className="mt-3" />
-      <div className="md:flex justify-between mt-10">
+      <div className="md:flex gap-6 mt-10">
         <div>
           {blogs.map((blog) => (
             <Blog
@@ -51,6 +56,9 @@ const App = () => {
         <div>
           <Bookmark readingTime={readingTime} bookmarks={bookmarks}></Bookmark>
         </div>
+      </div>
+      <div className="mt-10">
+        <Answer></Answer>
       </div>
       <ToastContainer />
     </div>
