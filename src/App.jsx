@@ -31,7 +31,7 @@ const App = () => {
       setBookmarks(newBookmark);
     } else {
       toast(
-        "You Have Already Bookmarked This Blog” . You can’t use browser alert. If the blog title gets added in the list after toast alert we will accept it. That is, You can bookmark a blog multiple times. No worries!"
+        "“You Have Already Bookmarked This Blog” . You can’t use browser alert. If the blog title gets added in the list after toast alert we will accept it. That is, You can bookmark a blog multiple times. No worries!"
       );
       const newBookmark = [...bookmarks, bookmark];
       setBookmarks(newBookmark);
@@ -39,10 +39,10 @@ const App = () => {
   };
 
   return (
-    <div className="my-8 p-4 md:mx-28">
+    <div className="my-8 p-4 container mx-auto">
       <Header></Header>
       <hr className="mt-3" />
-      <div className="md:flex gap-6 mt-10">
+      <div className="md:flex gap-4 mt-10">
         <div>
           {blogs.map((blog) => (
             <Blog

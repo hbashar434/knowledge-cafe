@@ -8,11 +8,11 @@ const Blog = (props) => {
   const addToBookmark = props.addToBookmark;
 
   return (
-    <div className="card w-full bg-base-100">
-      <figure className=" rounded-2xl">
-        <img src={cover} alt="banner-image" className=" w-full h-96" />
+    <div className="card w-full mb-6 bg-base-100">
+      <figure className="rounded-2xl">
+        <img src={cover} alt="banner-image" />
       </figure>
-      <div className="card-body">
+      <div className="card-body px-0">
         <div className=" flex justify-between">
           <div className="flex">
             <figure className=" w-12 h-12 rounded-full mr-4">
