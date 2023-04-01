@@ -6,7 +6,8 @@
     "time": 10,
     "name": "Shanna Sheppard",
     "title": "The Future of AI and Machine Learning: A Comprehensive Guide",
-    "date": "Mar 27 (3 Days ago)"
+    "date": "Mar 27 (3 Days ago)",
+    "quantity": 0
   },
   {
     "id": "6425c4aa48da56d020a70320",
@@ -15,7 +16,8 @@
     "time": 18,
     "name": "Sanchez Marsh",
     "title": "Breaking Down Blockchain: Exploring the Technology Behind Bitcoin",
-    "date": "Mar 27 (3 Days ago)"
+    "date": "Mar 27 (3 Days ago)",
+    "quantity": 0
   },
 
   {
@@ -25,7 +27,8 @@
     "time": 12,
     "name": "Chase Reyes",
     "title": "The Power of Cloud Computing: Why It's Revolutionizing Business",
-    "date": "Mar 27 (3 Days ago)"
+    "date": "Mar 27 (3 Days ago)",
+    "quantity": 0
   },
   {
     "id": "6425c75834d0e0b86e6d20d4",
@@ -34,6 +37,7 @@
     "time": 13,
     "name": "Doyle Levy",
     "title": "The Impact of Social Media on Society: Pros and Cons",
-    "date": "Mar 27 (3 Days ago)"
+    "date": "Mar 27 (3 Days ago)",
+    "quantity": 0
   }
 ]

@@ -7,6 +7,7 @@ import Header from "./components/Header/Header";
 const App = () => {
   const [blogs, setBlog] = useState([]);
   const [readingTime, setReadingTime] = useState(0);
+  const [bookmarks, setBookmarks] = useState([]);
 
   useEffect(() => {
     fetch("/data.json")
@@ -18,9 +19,13 @@ const App = () => {
     let spentTime = readingTime + time;
     setReadingTime(spentTime);
   };
+  const addToBookmark = (bookmark) => {
+    const newBookmark = [...bookmarks, bookmark];
+    setBookmarks(newBookmark);
+  };
 
   return (
-    <div className=" my-8 p-4 md:mx-20">
+    <div className=" my-8 p-4 mx-auto container">
       <Header></Header>
       <hr className="mt-3" />
       <div className="md:flex justify-between mt-10">
@@ -30,11 +35,12 @@ const App = () => {
               blog={blog}
               key={blog.id}
               handleReadingTime={handleReadingTime}
+              addToBookmark={addToBookmark}
             ></Blog>
           ))}
         </div>
         <div>
-          <Bookmark readingTime={readingTime}></Bookmark>
+          <Bookmark readingTime={readingTime} bookmarks={bookmarks}></Bookmark>
         </div>
       </div>
     </div>

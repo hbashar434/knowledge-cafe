@@ -1,18 +1,32 @@
 import React from "react";
 
-const Bookmark = ({ readingTime }) => {
-  console.log(readingTime);
+const Bookmark = ({ readingTime, bookmarks }) => {
+  let quantity = 0;
+  for (const count of bookmarks) {
+    count.quantity = count.quantity || 1;
+    quantity += count.quantity;
+  }
 
   return (
-    <div className="card bg-gray-300 w-96 rounded-lg p-4">
-      <h3 className="text-lg font-bold text-blue-900">
+    <div className="w-96 rounded-lg p-4 sticky top-0">
+      <h3 className="card border border-indigo-700 p-4 text-lg font-bold text-indigo-700">
         Spent time on read : {readingTime} min
       </h3>
-      <div className="mt-10">
-        <h1 className=" text-xl font-bold mb-4">Bookmarked Blogs : </h1>
-        <h2 className="card p-4 bg-white text-lg font-semibold rounded-md">
-          Bookmark :
-        </h2>
+
+      <div className="mt-10 bg-gray-200 rounded-lg">
+        <div className=" p-4">
+          <h1 className=" text-xl font-bold mb-4">
+            Bookmarked Blogs : {quantity}
+          </h1>
+          {bookmarks.map((bookmark, index) => (
+            <h2
+              key={index}
+              className=" mt-4 card p-4 bg-white text-lg font-semibold rounded-md"
+            >
+              {bookmark.title}
+            </h2>
+          ))}
+        </div>
       </div>
     </div>
   );
