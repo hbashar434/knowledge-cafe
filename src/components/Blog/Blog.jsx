@@ -1,12 +1,13 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
+import { toast } from "react-toastify";
 
 const Blog = (props) => {
   const { id, cover, image, name, title, date, time } = props.blog;
   const handleReadingTime = props.handleReadingTime;
   const addToBookmark = props.addToBookmark;
-
+  const notify = () => toast("Bookmark already added!");
   return (
     <div className="card w-full bg-base-100">
       <figure className=" rounded-2xl">
@@ -29,7 +30,10 @@ const Blog = (props) => {
               <FontAwesomeIcon
                 className=" cursor-pointer"
                 icon={faBookmark}
-                onClick={() => addToBookmark(props.blog)}
+                onClick={() => {
+                  addToBookmark(props.blog);
+                  notify();
+                }}
               />
             </p>
           </div>
