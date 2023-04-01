@@ -3,7 +3,7 @@ import "./App.css";
 import Blog from "./components/Blog/Blog";
 import Bookmark from "./components/Bookmark/Bookmark";
 import Header from "./components/Header/Header";
-import { ToastContainer } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
@@ -22,8 +22,15 @@ const App = () => {
     setReadingTime(spentTime);
   };
   const addToBookmark = (bookmark) => {
-    const newBookmark = [...bookmarks, bookmark];
-    setBookmarks(newBookmark);
+    const bookmarkExist = bookmarks.find((markId) => markId.id === bookmark.id);
+    if (!bookmarkExist) {
+      const newBookmark = [...bookmarks, bookmark];
+      setBookmarks(newBookmark);
+    } else {
+      toast("You Have Already Bookmarked This Blog” . You can’t use browser alert. If the blog title gets added in the list after toast alert we will accept it. That is, You can bookmark a blog multiple times. No worries!");
+      const newBookmark = [...bookmarks, bookmark];
+      setBookmarks(newBookmark);
+    }
   };
 
   return (
